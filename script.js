@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioData = {
         name : "岡本 泰征 Okamoto Taisei", 
         title : "東京国際工科専門職大学 AI戦略コース", 
-        skills : ["Python","React", "Next.js", "TypeScript", "Node.js"]
+        skills : ["Python"]
     };
-
     // ヘッダー情報を設定
-    document.getElementById('portfolio-name').textContent = portfolioData.name + ' のポートフォリオ';
+    document.getElementById('portfolio-name').textContent = portfolioData.name + 'のポートフォリオ';
     document.getElementById('portfolio-title').textContent = portfolioData.title;
 
     // プロフィール情報を設定
@@ -28,4 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
         p.className = 'text-muted';
         skillsList.parentNode.replaceChild(p, skillsList);
     }
+
+    // ビデオ要素の取得
+    const video = document.getElementById('project-video');
+
+    // ビデオのメタデータが読み込まれたときのイベントリスナー
+    video.addEventListener('loadedmetadata', function() {
+        console.log('動画の長さ: ' + video.duration + ' 秒');
+    });
+
+ // 必要に応じて、他のビデオ制御機能をここに追加
 });

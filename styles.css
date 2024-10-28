@@ -98,13 +98,21 @@ body {
     }
 }
 
-.video-placeholder {
-    aspect-ratio: 16 / 9;
-    background-color: var(--muted);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+    overflow: hidden;
     border-radius: 0.5rem;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .button {
