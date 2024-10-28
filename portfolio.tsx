@@ -10,15 +10,15 @@ interface PortfolioProps {
 }
 
 export default function Portfolio({ 
-  name, 
-  title, 
-  skills = []
+  name="岡本泰征 Okamoto Taisei", 
+  title="東京国際工科専門職大学", 
+  skills = ["Python","React", "Next.js", "TypeScript", "Node.js"]
 }: PortfolioProps) {
   return (
     <div className="min-h-screen">
       <header className="bg-primary text-primary-foreground py-12 mb-8">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-2">{name}のポートフォリオ</h1>
+          <h1 className="text-4xl font-bold mb-2">ポートフォリオ</h1>
           <p className="text-xl">{title}</p>
         </div>
       </header>
