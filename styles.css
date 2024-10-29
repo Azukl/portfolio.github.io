@@ -115,6 +115,23 @@ body {
     object-fit: cover;
 }
 
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -155,4 +172,16 @@ body {
 
 .space-y-4 > * + * {
     margin-top: 1rem;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.hover\:underline:hover {
+    text-decoration: underline;
+}
+
+.inline-block {
+    display: inline-block;
 }
