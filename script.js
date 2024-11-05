@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioData = {
         name : "岡本 泰征 Okamoto Taisei", 
         title : "東京国際工科専門職大学 AI戦略コース", 
-        skills : ["Python"]
+        skills : ["Python","SQL(MySQL,Oracle)","PHP","Javascript,HTML,CSS","Java","R","C,C++","VB.net","Linux","AWS,Azure,GCP","Excel,Word,PowerPoint"]
     };
     // ヘッダー情報を設定
-    document.getElementById('portfolio-name').textContent = portfolioData.name + 'のポートフォリオ';
+    document.getElementById('portfolio-name').textContent = portfolioData.name + ' のポートフォリオ';
     document.getElementById('portfolio-title').textContent = portfolioData.title;
 
     // プロフィール情報を設定
